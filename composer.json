@@ -1,0 +1,19 @@
+{
+  "name": "cownet/laravel-uuid",
+  "description": "Laravel extension for UUID use in model",
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "webpatser/laravel-uuid": "^3.0",
+    "illuminate/database": "*",
+    "php": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cownet\\Laravel\\Uuid\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.3"
+  }
+}
