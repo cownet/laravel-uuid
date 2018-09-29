@@ -6,7 +6,7 @@
 # Laravel UUID
 
 Laravel extension for UUID use in model. 
-This library is a wrapper that allows [WebPatser](https://packagist.org/packages/webpatser/laravel-uuid) UUID library 
+This library is a wrapper that allows [WebPatser UUID](https://packagist.org/packages/webpatser/laravel-uuid) library 
 to auto-integrate within Laravel eloquent model.
 
 # Installation
