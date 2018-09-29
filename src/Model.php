@@ -5,18 +5,25 @@ namespace Cownet\Laravel\Uuid;
 use Webpatser\Uuid\Uuid;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 
+/**
+ * Class Model
+ * @package Cownet\Laravel\Uuid
+ */
 class Model extends EloquentModel
 {
 
-    protected static function boot()
+    /**
+     * Model constructor.
+     * @param array $attributes
+     * @throws \Exception
+     */
+    public function __construct(array $attributes = [])
     {
-        parent::boot();
+        parent::__construct($attributes);
 
-        static::creating(function ($model) {
-            if (!$model->incrementing) {
-                $model->{$model->getKeyName()} = (string)Uuid::generate(4);
-            }
-        });
+        if($this->incrementing === false) {
+            $this->{$this->getKeyName()} = (string)Uuid::generate(4);
+        }
     }
 
 }
