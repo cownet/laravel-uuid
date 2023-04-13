@@ -4,7 +4,7 @@
   "license": "MIT",
   "type": "library",
   "require": {
-    "webpatser/laravel-uuid": "^4.0",
+    "flynowpaylater/laravel-uuid": "dev-master",
     "illuminate/database": "*",
     "php": "^8.0"
   },
